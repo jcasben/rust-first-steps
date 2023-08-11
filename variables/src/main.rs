@@ -84,5 +84,5 @@ fn main() {
     let f = [3; 6]; //equals to let f = [3, 3, 3, 3, 3, 3];
 
     let first = a[1];
-    let last = a[a.leng() - 1];
+    let last = a[a.len() - 1];
 }

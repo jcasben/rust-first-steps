@@ -26,13 +26,14 @@ fn main() {
 
     //Ways of creating instances from other instances
     //Typical
-    let user2 = User {
+    /* let _user2 = User {
         active: user1.active,
         username: user1.username,
         email: String::from("another1@example.com"),
         sign_in_count: user1.sign_in_count,
     };
-
+    */
+    
     //Rust's Struct Update Syntax
     let user2 = User {
         email: String::from("another1@example.com"),
