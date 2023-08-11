@@ -44,6 +44,6 @@ fn main() {
 
     //OPTION ENUM
     let some_number = Some(6);
-    let some_char('c');
+    let some_char = Some('c');
     let absent_number: Option<i32> = None;
 }
