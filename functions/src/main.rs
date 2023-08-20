@@ -1,7 +1,7 @@
 fn main() {
     println!("Hello World!");
 
-    test_function(10);
+    test_function(10);    
     test_function_2('J', 19);
 }
 
