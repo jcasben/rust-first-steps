@@ -30,38 +30,38 @@ fn main() {
      */
 
     //Integers
-    let v: i8 = -8;
-    let v: u8 = 0b0000_1000;
+    let _v: i8 = -8;
+    let _v: u8 = 0b0000_1000;
 
-    let v: i16 = -16;
-    let v: u16 = 0x10;
+    let _v: i16 = -16;
+    let _v: u16 = 0x10;
 
-    let v: i32 = -32;
-    let v: u32 = 32;
+    let _v: i32 = -32;
+    let _v: u32 = 32;
 
-    let v: i64 = -64;
-    let v: u64 = 64;
+    let _v: i64 = -64;
+    let _v: u64 = 64;
 
-    let v: isize = -64;
-    let v: usize = 64;
+    let _v: isize = -64;
+    let _v: usize = 64;
 
     //Floating point
-    let v: f32 = 2.0;
-    let v: f64 = 12.0;
+    let _v: f32 = 2.0;
+    let _v: f64 = 12.0;
 
     //Numeric Operations
-    let sum = 5 + 1;
-    let subs = 95.5 - 4.4;
-    let mult = 10 * 10;
-    let div = 56.3 / 32.3;
-    let remainder = 44 % 5;
+    let _sum = 5 + 1;
+    let _subs = 95.5 - 4.4;
+    let _mult = 10 * 10;
+    let _div = 56.3 / 32.3;
+    let _remainder = 44 % 5;
 
     //Boolean
-    let boolean: bool = true;
+    let _boolean: bool = true;
 
     //Character
-    let c = 'z';
-    let z: char = 'Z';
+    let _c = 'z';
+    let _z: char = 'Z';
 
     /*
      * Compound types
@@ -71,8 +71,8 @@ fn main() {
 
     //Tuples
     let tup: (i32, char, f32) = (10, 'c', 6.5);
-    let c = tup.1; //'c'
-    let (x, y, z) = tup;
+    let _c = tup.1; //'c'
+    let (_x, y, _z) = tup;
 
     println!("The value of y is: {y}");
 
@@ -80,9 +80,9 @@ fn main() {
 
     //Array
     let a = [1, 2, 3, 4, 5];
-    let b: [i32; 4];
-    let f = [3; 6]; //equals to let f = [3, 3, 3, 3, 3, 3];
+    let _b: [i32; 4];
+    let _f = [3; 6]; //equals to let f = [3, 3, 3, 3, 3, 3];
 
-    let first = a[1];
-    let last = a[a.len() - 1];
+    let _first = a[1];
+    let _last = a[a.len() - 1];
 }
