@@ -14,7 +14,7 @@ impl Rectangle {
         self.width > rect.width && self.height > rect.height
     }
 
-    fn square(size: u32) -> Self {
+    fn _square(size: u32) -> Self {
         Self {
             width: size,
             height: size,

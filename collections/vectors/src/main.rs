@@ -31,7 +31,7 @@ fn main() {
 
     //mutable
     let mut v = vec![100, 37, 5];
-    for i in &v {
+    for i in &mut v {
         *i += 50; 
     }
 
@@ -42,7 +42,7 @@ fn main() {
         Text(String),
     }
 
-    let row = vec![
+    let _row = vec![
         SpreadSheetCell::Int(2),
         SpreadSheetCell::Float(9.6),
         SpreadSheetCell::Text(String::from("blue")),

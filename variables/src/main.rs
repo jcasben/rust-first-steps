@@ -6,7 +6,7 @@ fn main() {
     println!("The value of x is: {x}");
 
     //Constants
-    const Y:i32 = 10;
+    const _Y:i32 = 10;
 
     //Shadowing
     let z = 1;

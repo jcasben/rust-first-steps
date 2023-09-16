@@ -19,5 +19,5 @@ fn main() {
     }
 
     let condition = true;
-    let n = if condition { 3 } else { 5 };
+    let _n = if condition { 3 } else { 5 };
 }

@@ -13,6 +13,6 @@ fn test_function_2(initial: char, age: i32) {
     println!("Hi, my initial is {initial} and I'm {age} years old.");
 }
 
-fn five() -> i32 {
+fn _five() -> i32 {
     5 //Expression. In Rust, a function returns the last expression or the value using "return"
 }

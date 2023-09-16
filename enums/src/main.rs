@@ -27,23 +27,23 @@ impl Message {
 }
 
 fn main() {
-    let home = IpAddr {
+    let _home = IpAddr {
         kind: IpAddrKind::V4,
         address: String::from("127.0.0.1"),
     };
-    let loopback = IpAddr {
+    let _loopback = IpAddr {
         kind: IpAddrKind::V6,
         address: String::from("::1"),
     };
 
-    let better_home = BetterIpAddrKind::V4(String::from("127.0.0.1"));
-    let better_loopback = BetterIpAddrKind::V6(String::from("::1"));
+    let _better_home = BetterIpAddrKind::V4(String::from("127.0.0.1"));
+    let _better_loopback = BetterIpAddrKind::V6(String::from("::1"));
 
     let m = Message::Write(String::from("Hello!"));
     m.call();
 
     //OPTION ENUM
-    let some_number = Some(6);
-    let some_char = Some('c');
-    let absent_number: Option<i32> = None;
+    let _some_number = Some(6);
+    let _some_char = Some('c');
+    let _absent_number: Option<i32> = None;
 }

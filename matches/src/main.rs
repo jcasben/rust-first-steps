@@ -7,11 +7,11 @@ enum Coin {
 
 fn main() {
     let five = Some(5);
-    let six = plus_one(five);
-    let none = plus_one(None);
+    let _six = plus_one(five);
+    let _none = plus_one(None);
 }
 
-fn value_in_cents(coin: Coin) -> u8 {
+fn _value_in_cents(coin: Coin) -> u8 {
     match coin {
         Coin::Penny => 1,
         Coin::Nickel => 5,

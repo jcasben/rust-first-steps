@@ -35,21 +35,21 @@ fn main() {
     */
     
     //Rust's Struct Update Syntax
-    let user2 = User {
+    let _user2 = User {
         email: String::from("another1@example.com"),
         ..user1     //If it uses values that doesn't implement the copy trait, user1 would be no
                     //no longer valid.
     };
 
     //TUPLE STRUCTS IMPLEMENTATION
-    let black = Color(0, 0, 0);
-    let origin = Point(0, 0, 0);
+    let _black = Color(0, 0, 0);
+    let _origin = Point(0, 0, 0);
 
     //UNIT-LIKE STRUCTS IMPLEMENTATION
-    let subject = AlwaysEqual;
+    let _subject = AlwaysEqual;
 }
 
-fn build_user(username: String, email: String) -> User {
+fn _build_user(username: String, email: String) -> User {
     User {
         active: true,
         username,
