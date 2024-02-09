@@ -2,6 +2,27 @@ use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
 
+/*
+ * Custom type for validating the user input.
+ */
+pub struct Guess {
+    value: i32,
+}
+
+impl Guess {
+    pub fn new(value: i32) -> Guess {
+        if value < 1 || value > 100 {
+            panic!("Guess value must be between 1 and 100, got {}", value);
+        }
+
+        Guess { value }
+    }
+
+    pub fn value(&self) -> i32 {
+        self.value
+    }
+}
+
 fn main() {
     println!("Welcome to the Guessing Game!");
 
@@ -14,14 +35,16 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read the line");
 
-        let guess: u32 = match guess.trim().parse() {
+        let guess: i32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
         };
 
-        println!("You guessed: {guess}");
+        let guess = Guess::new(guess);
 
-        match guess.cmp(&random_number) {
+        println!("You guessed: {}", guess.value());
+
+        match guess.value().cmp(&random_number) {
             Ordering::Less => println!("Too small!"),
             Ordering::Equal => {
                 println!("You win!!");
